@@ -1,9 +1,9 @@
 // LCFR API made by storcale
 
-const error404 = "Error 404: Not found"
-var date = new Date
+cconst error404 = "Error 404: Not found"
+var date = new Date()
 
-const version = "1.0.0 (alpha version: 0.0.1)"
+const version = "1.0.0 RELEASE"
 
 // Web App
 
@@ -12,7 +12,7 @@ const version = "1.0.0 (alpha version: 0.0.1)"
 
   var action = e.parameter.action
   var type = e.parameter.type
-  
+
 
   switch(type){
 
@@ -49,18 +49,18 @@ const version = "1.0.0 (alpha version: 0.0.1)"
      case "searchUser":
       var callsign = e.parameter.callsign
       var division = e.parameter.division
-      var discordBot = e.parameter.discordBot
+      var discordBot = e.parameter.discordbot
 
       var user = roster_searchUser(callsign,division) // call function
       if(user == false){
-        if(discordBot){
+        if(discordBot == "true"){
           var output = "\nUnable to find this callsign in this division."
         }else{
-          var output = false
+          var output = "false"
         }
          return ContentService.createTextOutput(output).setMimeType(ContentService.MimeType.TEXT);
       }
-      if(discordBot){
+      if(discordBot == "true"){
        var output =  "\n" + "\n**Discord username:** " + user.discord + "\n**Roblox username**: " + user.roblox + "\n**Rank:** " + user.rank + "\n**Divisions:** " + user.divisions + "\n**Callsign:** " + user.callsign + "\n"
        return ContentService.createTextOutput(output).setMimeType(ContentService.MimeType.TEXT);
       }else{
@@ -208,18 +208,3 @@ function doPost(e){
 }
 }
 
-// Debuggging and testing
- function debug(){
-  var e = {
-     "parameter": {
-      'type': 'discord',
-       'action':'shiftAdd',
-        'host': 'storcale',
-        'user':'tom3',
-        'authorization':'938052b1-ca02-4861-ba4a-ea404f579131:fTJj5pebBF40Itqsqu15rO8jTVAyefQQmCXdKmrR4KqEt2CGc0',
-        'id':'62753'
-     }
-     
-  }
-  Logger.log(doPost(e))
- }
