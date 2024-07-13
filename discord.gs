@@ -7,7 +7,7 @@
   
 
  function discord_sendReport(dept,reporter,user,info,image) {
-   if(dept == 'LCFR'){var url = "https://discord.com/api/webhooks/1207358471448825928/B3XYuaL6S-RWaxa_PlAQUdr7mEBv2ezXmfB9ROXu83DpJNqZRebPi6VxAerUOjHbus38"; var pfp = "https://media.discordapp.net/attachments/1100385478164893746/1206930457971789834/LCFRlogo.png?ex=66814694&is=667ff514&hm=2b424be8ed4e92b489f78b4b8912f926ef7324f82b123233bd07da48926ddab8&=&format=webp&quality=lossless&width=437&height=437"}else if(dept == 'EMS'){var url = "https://discord.com/api/webhooks/1256584458107355156/t2lmEf_GtRuWB2VvtBZkfRX_ldG5xmxsQYq3uuaS-wxhsdU6fbikOYJAw0lcDLZJ_bm8"; var pfp = "https://cdn.discordapp.com/attachments/1100385478164893746/1256585275858092053/ems-orange.png?ex=66814dbb&is=667ffc3b&hm=afc3bcfc9061782c748fe1d53fb75981653c59538307713b8b41570bf82ebb8d&"}else{
+   if(dept == 'LCFR'){var url = "url"; var pfp = "https://media.discordapp.net/attachments/1100385478164893746/1206930457971789834/LCFRlogo.png?ex=66814694&is=667ff514&hm=2b424be8ed4e92b489f78b4b8912f926ef7324f82b123233bd07da48926ddab8&=&format=webp&quality=lossless&width=437&height=437"}else if(dept == 'EMS'){var url = "url"; var pfp = "https://cdn.discordapp.com/attachments/1100385478164893746/1256585275858092053/ems-orange.png?ex=66814dbb&is=667ffc3b&hm=afc3bcfc9061782c748fe1d53fb75981653c59538307713b8b41570bf82ebb8d&"}else{
     throw ReferenceError("Error at Discord_sendReport: Dept variable is neither LCFR or LCEMS but triggered the function")
    }
    var payload = 
@@ -56,7 +56,7 @@
   
 
  function discord_shiftAdd(dept,host,user){
-    if(dept == 'lcfr'){var url = "https://discord.com/api/webhooks/1207358471448825928/B3XYuaL6S-RWaxa_PlAQUdr7mEBv2ezXmfB9ROXu83DpJNqZRebPi6VxAerUOjHbus38"; var pfp = "https://media.discordapp.net/attachments/1100385478164893746/1206930457971789834/LCFRlogo.png?ex=65ddcc94&is=65cb5794&hm=8514699e235aeb6a23c002d70e68ae14af6a996d552227efffa10189aa651ea7&=&format=webp&quality=lossless&width=662&height=662"}else{var url = "https://discord.com/api/webhooks/1256584458107355156/t2lmEf_GtRuWB2VvtBZkfRX_ldG5xmxsQYq3uuaS-wxhsdU6fbikOYJAw0lcDLZJ_bm8"; var pfp = "https://cdn.discordapp.com/attachments/1100385478164893746/1256585275858092053/ems-orange.png?ex=66814dbb&is=667ffc3b&hm=afc3bcfc9061782c748fe1d53fb75981653c59538307713b8b41570bf82ebb8d&"}
+    if(dept == 'lcfr'){var url = "url"; var pfp = "https://media.discordapp.net/attachments/1100385478164893746/1206930457971789834/LCFRlogo.png?ex=65ddcc94&is=65cb5794&hm=8514699e235aeb6a23c002d70e68ae14af6a996d552227efffa10189aa651ea7&=&format=webp&quality=lossless&width=662&height=662"}else{var url = "url"; var pfp = "https://cdn.discordapp.com/attachments/1100385478164893746/1256585275858092053/ems-orange.png?ex=66814dbb&is=667ffc3b&hm=afc3bcfc9061782c748fe1d53fb75981653c59538307713b8b41570bf82ebb8d&"}
    var payload = 
     {
    "embeds": [{
@@ -98,7 +98,7 @@
 
 
  function discord_notice(dept,noticer,noticed,reason,image){
-    if(dept == 'lcfr'){var url = "https://discord.com/api/webhooks/1207358471448825928/B3XYuaL6S-RWaxa_PlAQUdr7mEBv2ezXmfB9ROXu83DpJNqZRebPi6VxAerUOjHbus38"; var pfp = "https://media.discordapp.net/attachments/1100385478164893746/1206930457971789834/LCFRlogo.png?ex=65ddcc94&is=65cb5794&hm=8514699e235aeb6a23c002d70e68ae14af6a996d552227efffa10189aa651ea7&=&format=webp&quality=lossless&width=662&height=662"}else{var url = "https://discord.com/api/webhooks/1256584458107355156/t2lmEf_GtRuWB2VvtBZkfRX_ldG5xmxsQYq3uuaS-wxhsdU6fbikOYJAw0lcDLZJ_bm8"; var pfp = "https://cdn.discordapp.com/attachments/1100385478164893746/1256585275858092053/ems-orange.png?ex=66814dbb&is=667ffc3b&hm=afc3bcfc9061782c748fe1d53fb75981653c59538307713b8b41570bf82ebb8d&"}
+    if(dept == 'lcfr'){var url = "url"; var pfp = "https://media.discordapp.net/attachments/1100385478164893746/1206930457971789834/LCFRlogo.png?ex=65ddcc94&is=65cb5794&hm=8514699e235aeb6a23c002d70e68ae14af6a996d552227efffa10189aa651ea7&=&format=webp&quality=lossless&width=662&height=662"}else{var url = "url"; var pfp = "https://cdn.discordapp.com/attachments/1100385478164893746/1256585275858092053/ems-orange.png?ex=66814dbb&is=667ffc3b&hm=afc3bcfc9061782c748fe1d53fb75981653c59538307713b8b41570bf82ebb8d&"}
     var payload = 
      {
      "embeds": [{
