@@ -10,8 +10,11 @@ This API includes:
 
 used by the LCFR Discord Bot and the LCFR Console Application (bash)
 
+**Available endpoints:**
+![image](https://github.com/user-attachments/assets/bf4bfdff-10db-4f22-97ce-3d2e70f98dc2)
+
 **Usage example:** Get the information of an employee on the roster
-![image](https://github.com/storcale/LCFR-API/assets/105071746/416a3790-ca56-465a-9cd4-01a6db997b1e)
+![image](https://github.com/user-attachments/assets/9d74b2f7-9f5c-40b6-ba7e-315b5f2171e2)
 
 
 All written in Javascript,
